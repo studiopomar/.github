@@ -1,0 +1,36 @@
+name: "Sugestão de Funcionalidade"
+description: "Proponha uma nova funcionalidade, melhoria de interface ou algoritmo DSP"
+title: "[Sugestão]: "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: module
+    attributes:
+      label: Módulo Alvo
+      options:
+        - kamafeu (Sintetizador/Editor)
+        - Copaiba-NEO (Editor de oto.ini)
+        - Copaiba-Lexicon-LTS (Waveform/DSP Tooling)
+        - Phonemizers & Core DSP
+        - Ecossistema / Geral
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Qual problema ou necessidade esta proposta resolve?
+      description: Uma explicação clara do porquê esta melhoria é necessária.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solução Proposta
+      description: Descreva como você imagina o funcionamento ideal da funcionalidade.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas Consideradas
+      description: Outras abordagens ou ferramentas existentes que realizam algo similar.

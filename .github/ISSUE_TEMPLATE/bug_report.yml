@@ -1,0 +1,54 @@
+name: "Reporte de Bug"
+description: "Informe um erro, travamento ou comportamento inesperado em ferramentas do Studio Pomar"
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por ajudar a aprimorar as ferramentas do Studio Pomar! Forneça o máximo de detalhes possível.
+  - type: dropdown
+    id: module
+    attributes:
+      label: Módulo ou Ferramenta
+      description: Selecione onde o problema ocorreu
+      options:
+        - kamafeu (Sintetizador/Editor)
+        - Copaiba-NEO (Editor de oto.ini)
+        - Copaiba-Lexicon-LTS (Visualizador DSP/Waveform)
+        - Phonemizer / Resampler
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição do Problema
+      description: O que aconteceu e qual era o comportamento esperado?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Passos para Reprodução
+      description: Passo a passo para reproduzir o erro
+      placeholder: |
+        1. Abrir o projeto ...
+        2. Carregar o voicebank ...
+        3. Tocar a nota ...
+        4. Ocorreu o erro: ...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Ambiente / Sistema Operacional
+      description: Exemplo: macOS 14.5 (Apple Silicon), Windows 11 64-bit, Ubuntu 24.04
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs ou Mensagens de Terminal
+      description: Cole aqui a saída do terminal, stack traces ou mensagens de erro
+      render: shell

@@ -1,0 +1,34 @@
+name: "Correção Fonética / Dicionário"
+description: "Relate pronúncias incorretas, fonemas ausentes ou ajustes em regras fonéticas"
+title: "[Fonética]: "
+labels: ["phonetics", "triage"]
+body:
+  - type: input
+    id: word_or_grapheme
+    attributes:
+      label: Palavra / Expressão
+      description: Palavra ou padrão que apresentou problema de conversão grafema-fonema
+      placeholder: "ex: coração, cantar, pássaro"
+    validations:
+      required: true
+  - type: input
+    id: current_phoneme
+    attributes:
+      label: Transcrição Atual Gerada
+      placeholder: "ex: k o r a s a w n"
+    validations:
+      required: true
+  - type: input
+    id: expected_phoneme
+    attributes:
+      label: Transcrição Fonética Esperada
+      placeholder: "ex: k o r a s a~ w~"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto Linguístico / Dialetal
+      description: Explique se é uma variação regional (ex: PT-BR Sudeste, Nordeste, Sul, PT-PT) ou regra geral da língua
+    validations:
+      required: false
