@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/studiopomar/.github/main/assets/logo.png" width="160" alt="Studio POMAR Logo" />
+
 # Studio POMAR
 
 **Tecnologia de síntese vocal aberta, moderna e com foco em autonomia.**  
