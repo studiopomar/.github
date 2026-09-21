@@ -36,8 +36,7 @@ O **Studio Pomar** desenvolve ferramentas de código aberto para síntese vocal,
 | :--- | :--- | :---: |
 | **[kamafeu](https://github.com/studiopomar/kamafeu)** | Editor e sintetizador vocal com piano roll multifaixa, motor DSP nativo (TD-PSOLA) e edição de pitch. | `Rust` `DSP` |
 | **[Copaiba-NEO](https://github.com/studiopomar/Copaiba-NEO)** | Editor multiplataforma de `oto.ini` para configuração e calibração de voicebanks. | `Rust` `GUI` |
-| **[Copaiba-Lexicon-LTS](https://github.com/studiopomar/Copaiba-Lexicon-LTS)** | Visualizador de waveform e ferramentas de configuração para voicebanks UTAU/OpenUtau. | `C++` `Rust` |
-| **Phonemizers & Samplers** | Conversores grafema-fonema (G2P) e motores de reamostragem focados em português brasileiro e outros idiomas. | `Rust` `WASM` |
+| **[Copaiba-Lexicon-LTS](https://github.com/studiopomar/Copaiba-Lexicon-LTS)** | Visualizador de waveform e ferramentas de configuração para voicebanks UTAU/OpenUtau. | `Python` |
 
 </div>
 
