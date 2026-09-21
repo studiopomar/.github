@@ -1,67 +1,85 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/studiopomar/.github/main/assets/logo.png" width="160" alt="Studio POMAR Logo" />
+<br/>
 
-# Studio POMAR
+<img src="https://raw.githubusercontent.com/studiopomar/.github/main/assets/logo.png" width="150" alt="Studio POMAR" />
 
-**Tecnologia de síntese vocal aberta, moderna e com foco em autonomia.**  
-*Open-source vocal synthesis tools, DSP engines & audio research.*
+# STUDIO POMAR
+
+**Tecnologia e sintetizadores vocais de código aberto cultivados para autonomia artística.**  
+*Open-source vocal synthesis engines, DSP architecture, and creative sovereignty.*
+
+<br/>
+
+[![Organização](https://img.shields.io/badge/STUDIO-POMAR-c0392b?style=for-the-badge&labelColor=1e1e1e)](https://github.com/studiopomar)
+[![Manifesto](https://img.shields.io/badge/MANIFESTO-O_Ritmo_da_Terra-27ae60?style=for-the-badge&labelColor=1e1e1e)](https://github.com/studiopomar)
+[![Engenharia](https://img.shields.io/badge/ENGINE-Rust_%26_DSP-d35400?style=for-the-badge&logo=rust&logoColor=white&labelColor=1e1e1e)](https://www.rust-lang.org/)
+[![Ecossistema](https://img.shields.io/badge/ECOSSISTEMA-UTAU_%7C_OpenUtau_%7C_DiffSinger-f39c12?style=for-the-badge&labelColor=1e1e1e)](https://github.com/studiopomar)
+[![Licença](https://img.shields.io/badge/CÓDIGO-Aberto_%26_Livre-2c3e50?style=for-the-badge&labelColor=1e1e1e)](https://github.com/studiopomar)
+
+<br/>
 
 ---
-
-[![GitHub followers](https://img.shields.io/github/followers/studiopomar?label=Followers&style=for-the-badge&color=2e7d32&labelColor=1a1a1a)](https://github.com/studiopomar)
-[![Rust](https://img.shields.io/badge/Rust-100%25-dea584?style=for-the-badge&logo=rust&logoColor=white&labelColor=1a1a1a)](https://www.rust-lang.org/)
-[![Ecosystem](https://img.shields.io/badge/Ecosystem-UTAU%20%7C%20OpenUtau%20%7C%20DiffSinger-4caf50?style=for-the-badge&labelColor=1a1a1a)](https://github.com/studiopomar)
-[![License](https://img.shields.io/badge/License-GPL%20%2F%20MIT-brightgreen?style=for-the-badge&labelColor=1a1a1a)](https://github.com/studiopomar)
 
 </div>
 
----
-
-## Sobre o Studio POMAR
-
-O **Studio POMAR** é um coletivo e laboratório de desenvolvimento dedicado à criação de ferramentas abertas para **síntese vocal, processamento digital de sinais (DSP) e produção musical independente**.
-
-Com base no manifesto *"O Ritmo da Terra"*, o projeto atua para que a tecnologia de voz cantada digital seja acessível, duradoura, expressiva e livre de restrições proprietárias. O foco é unir o ecossistema consolidado (UTAU, OpenUtau) a arquiteturas modernas em **Rust**, DSP em tempo real e novos paradigmas de síntese.
+> *"A tecnologia da voz cantada deve ser como a terra: fértil, duradoura, acessível a quem planta e livre de cercas proprietárias."*  
+> — **Manifesto Studio POMAR**
 
 ---
 
-## Projetos Principais
+## O Conceito POMAR
+
+O **Studio POMAR** é um laboratório de engenharia de áudio e desenvolvimento de software voltado para a criação de um ecossistema completo e independente de **síntese vocal**. 
+
+Assim como um pomar exige cuidado com o solo, irrigação e tempo para florescer, estruturamos nossas ferramentas em camadas integradas: desde a base matemática do processamento de sinais até as interfaces táteis com as quais músicos e produtores dão vida a novas vozes.
+
+<br/>
+
+```
+                             [ STUDIO POMAR ]
+                                    │
+         ┌──────────────────────────┼──────────────────────────┐
+         │                          │                          │
+   [ AS RAÍZES ]              [ O TRONCO ]               [ OS FRUTOS ]
+   Motores & DSP              Softwares & GUI            Música & Vozes
+   ──────────────────         ──────────────────         ──────────────────
+   • Rust Core DSP            • Kamafeu Synthesizer      • Voicebanks PT-BR
+   • TD-PSOLA Resynthesis     • Copaiba-NEO (OTO Editor) • Dicionários Fonéticos
+   • Phonemizer Engines       • Copaiba-Lexicon Tools    • Produção Independente
+```
+
+---
+
+## O Ecossistema
 
 <div align="center">
 
-| Projeto | Descrição | Stack |
+| Módulo / Repositório | Propósito e Características | Tecnologias |
 | :--- | :--- | :---: |
-| **[kamafeu](https://github.com/studiopomar/kamafeu)** | Editor e sintetizador vocal moderno com piano roll multifaixa, motor DSP nativo (TD-PSOLA) e edição de curvas de pitch. | `Rust` `DSP` |
-| **[Copaiba-NEO](https://github.com/studiopomar/Copaiba-NEO)** | Editor de `oto.ini` e utilitários multiplataforma para calibração precisa de voicebanks. | `Rust` `GUI` |
-| **[Copaiba-Lexicon-LTS](https://github.com/studiopomar/Copaiba-Lexicon-LTS)** | Ferramentas de configuração, visualização de waveform com aceleração por hardware e integração com UTAU/OpenUtau. | `C++` `Rust` |
-| **Phonemizers & Core DSP** | Motores de fonetização de alta performance, com suporte dedicado ao português brasileiro e a múltiplos idiomas. | `Rust` `WASM` |
+| **[kamafeu](https://github.com/studiopomar/kamafeu)** | **Estação de Trabalho & Sintetizador Vocal**<br/>Piano roll multifaixa, motor DSP nativo de alta fidelidade, edição de curvas de pitch e renderização em tempo real. | `Rust` `DSP` `TD-PSOLA` |
+| **[Copaiba-NEO](https://github.com/studiopomar/Copaiba-NEO)** | **Editor de Configuração e Calibração (oto.ini)**<br/>Ferramenta ágil e multiplataforma para corte, sincronia e parametrização milimétrica de amostras vocais. | `Rust` `GUI` `Audio` |
+| **[Copaiba-Lexicon-LTS](https://github.com/studiopomar/Copaiba-Lexicon-LTS)** | **Visualizador de Forma de Onda & Ferramentas de Voicebank**<br/>Renderização com aceleração gráfica, visualização espectral e utilitários de compatibilidade com UTAU e OpenUtau. | `C++` `Rust` `Hardware Accel` |
+| **Phonemizers & Samplers** | **Processamento Fonético e Reamostragem**<br/>Motores de transcrição grafema-fonema otimizados para português brasileiro e estruturas fonológicas complexas. | `Rust` `WASM` `NLP` |
 
 </div>
 
 ---
 
-## Diretrizes e Pilares
+## Nossos Pilares de Desenvolvimento
 
-```
-               ┌───────────────────────────────┐
-               │         STUDIO POMAR          │
-               └──────────────┬────────────────┘
-         ┌────────────────────┼────────────────────┐
-         ▼                    ▼                    ▼
-     SOBERANIA            PERFORMANCE          EXPRESSÃO
-  Ferramentas 100%      Módulos e engines     Foco na nuance da
-  abertas, perenes e     em Rust puro para    voz cantada e na
-     acessíveis.         DSP de baixa latência. fonética regional.
-```
+### 1. Soberania e Preservação Digital
+Nenhum criador deve perder seu instrumento por mudanças de termos de serviço ou servidores desativados. Nossas ferramentas rodam localmente, respeitam a privacidade e são desenhadas para durar décadas.
 
-- **Autonomia e Preservação:** Softwares executados localmente, garantindo perenidade para os criadores e sem dependência de serviços fechados.
-- **Engenharia em Rust:** Código modular, seguro contra falhas de memória e de alta performance para processamento em tempo real e compilação para WebAssembly.
-- **Interoperabilidade:** Suporte a padrões abertos de voicebanks, dicionários fonéticos e integração fluida entre diferentes plataformas de síntese.
+### 2. Engenharia de Baixa Latência em Rust
+Todo o núcleo crítico de processamento de áudio é escrito em Rust, garantindo segurança de memória, ausência de coletor de lixo (*garbage collector pauses*) e compatibilidade nativa tanto em desktops (Linux, macOS, Windows) quanto na web (WebAssembly).
+
+### 3. Brasilidade e Diversidade Fonética
+Desenvolvemos soluções pioneiras para acomodar as particularidades da língua portuguesa, seus encontros consonantais, vogais nasais e riqueza rítmica na síntese vocal cantada.
 
 ---
 
-## Tecnologias Utilizadas
+## Tecnologias e Padrões
 
 <div align="center">
 
@@ -69,24 +87,32 @@ Com base no manifesto *"O Ritmo da Terra"*, o projeto atua para que a tecnologia
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=flat-square&logo=webassembly&logoColor=white)
-![OpenUtau](https://img.shields.io/badge/OpenUtau-Compatible-4caf50?style=flat-square)
+![OpenUtau](https://img.shields.io/badge/OpenUtau-Padrão_Compatível-27ae60?style=flat-square)
+![DiffSinger](https://img.shields.io/badge/DiffSinger-Suporte_Integrado-f39c12?style=flat-square)
 
 </div>
 
 ---
 
-## Como Contribuir
+## Como Contribuir com o Pomar
 
-Colaborações são bem-vindas em todas as áreas do projeto:
+O Studio POMAR é construído por e para a comunidade. Há espaço para diversas formas de colaboração:
 
-- **Relato de Bugs e Sugestões:** Utilize as *Issues* e os fóruns de discussão em cada repositório para reportar falhas ou propor melhorias.
-- **Desenvolvimento de Software:** Verifique as tarefas com as tags `good first issue` e `help wanted`.
-- **Validação e Testes:** Ajude na validação do Kamafeu e do Copaiba com diferentes configurações de voicebanks e sistemas operacionais.
+- **Programação de Áudio & Rust:** Otimização de algoritmos de pitch shifting, interpolação, DSP e interfaces.
+- **Linguística & Fonética:** Expansão e refinamento dos dicionários fonéticos e conversores fonemizadores.
+- **Voicebanking & Gravação:** Criação de novos bancos de voz abertos, calibração de arquivos de configuração e testes acústicos.
+- **Design & Documentação:** Aperfeiçoamento de usabilidade, guias em português e documentação técnica.
 
 ---
 
 <div align="center">
 
-<sub>Studio POMAR — Código aberto e tecnologia vocal independente.</sub>
+```
+             .----------------------------------------------------.
+             |  Studio POMAR — O Ritmo da Terra em Código Aberto  |
+             '----------------------------------------------------'
+```
+
+<sub>Desenvolvido de forma colaborativa pela comunidade <b>Studio POMAR</b>.</sub>
 
 </div>
