@@ -2,16 +2,16 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/studiopomar/.github/main/assets/logo.png" width="150" alt="Studio POMAR" />
+<img src="https://raw.githubusercontent.com/studiopomar/.github/main/assets/logo.png" width="150" alt="Studio Pomar" />
 
-# STUDIO POMAR
+# Studio Pomar
 
 **Tecnologia e sintetizadores vocais de código aberto cultivados para autonomia artística.**  
 *Open-source vocal synthesis engines, DSP architecture, and creative sovereignty.*
 
 <br/>
 
-[![Organização](https://img.shields.io/badge/STUDIO-POMAR-c0392b?style=for-the-badge&labelColor=1e1e1e)](https://github.com/studiopomar)
+[![Organização](https://img.shields.io/badge/Studio-Pomar-c0392b?style=for-the-badge&labelColor=1e1e1e)](https://github.com/studiopomar)
 [![Manifesto](https://img.shields.io/badge/MANIFESTO-O_Ritmo_da_Terra-27ae60?style=for-the-badge&labelColor=1e1e1e)](https://github.com/studiopomar)
 [![Engenharia](https://img.shields.io/badge/ENGINE-Rust_%26_DSP-d35400?style=for-the-badge&logo=rust&logoColor=white&labelColor=1e1e1e)](https://www.rust-lang.org/)
 [![Ecossistema](https://img.shields.io/badge/ECOSSISTEMA-UTAU_%7C_OpenUtau_%7C_DiffSinger-f39c12?style=for-the-badge&labelColor=1e1e1e)](https://github.com/studiopomar)
@@ -24,20 +24,20 @@
 </div>
 
 > *"A tecnologia da voz cantada deve ser como a terra: fértil, duradoura, acessível a quem planta e livre de cercas proprietárias."*  
-> — **Manifesto Studio POMAR**
+> — **Manifesto Studio Pomar**
 
 ---
 
-## O Conceito POMAR
+## O Conceito Pomar
 
-O **Studio POMAR** é um laboratório de engenharia de áudio e desenvolvimento de software voltado para a criação de um ecossistema completo e independente de **síntese vocal**. 
+O **Studio Pomar** é um laboratório de engenharia de áudio e desenvolvimento de software voltado para a criação de um ecossistema completo e independente de **síntese vocal**. 
 
 Assim como um pomar exige cuidado com o solo, irrigação e tempo para florescer, estruturamos nossas ferramentas em camadas integradas: desde a base matemática do processamento de sinais até as interfaces táteis com as quais músicos e produtores dão vida a novas vozes.
 
 <br/>
 
 ```
-                             [ STUDIO POMAR ]
+                             [ Studio Pomar ]
                                     │
          ┌──────────────────────────┼──────────────────────────┐
          │                          │                          │
@@ -96,7 +96,7 @@ Desenvolvemos soluções pioneiras para acomodar as particularidades da língua 
 
 ## Como Contribuir com o Pomar
 
-O Studio POMAR é construído por e para a comunidade. Há espaço para diversas formas de colaboração:
+O Studio Pomar é construído por e para a comunidade. Há espaço para diversas formas de colaboração:
 
 - **Programação de Áudio & Rust:** Otimização de algoritmos de pitch shifting, interpolação, DSP e interfaces.
 - **Linguística & Fonética:** Expansão e refinamento dos dicionários fonéticos e conversores fonemizadores.
@@ -109,10 +109,10 @@ O Studio POMAR é construído por e para a comunidade. Há espaço para diversas
 
 ```
              .----------------------------------------------------.
-             |  Studio POMAR — O Ritmo da Terra em Código Aberto  |
+             |  Studio Pomar — O Ritmo da Terra em Código Aberto  |
              '----------------------------------------------------'
 ```
 
-<sub>Desenvolvido de forma colaborativa pela comunidade <b>Studio POMAR</b>.</sub>
+<sub>Desenvolvido de forma colaborativa pela comunidade <b>Studio Pomar</b>.</sub>
 
 </div>
