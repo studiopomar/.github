@@ -1,22 +1,17 @@
-# Política de Segurança — Studio Pomar
-
-O **Studio Pomar** leva a segurança e integridade de seus softwares a sério. Agradecemos o esforço e a responsabilidade da comunidade em reportar possíveis vulnerabilidades.
-
----
+# Política de Segurança (Studio Pomar)
 
 ## Versões Suportadas
 
-As atualizações de segurança são fornecidas para as versões mais recentes das branches principais (`main`) de cada repositório ativo da organização.
+Atualizações de segurança são aplicadas na branch principal (`main`) de cada repositório ativo da organização.
 
 ---
 
-## Como Reportar uma Vulnerabilidade
+## Reportando Vulnerabilidades
 
-Se você descobriu uma vulnerabilidade de segurança em qualquer repositório do Studio Pomar, pedimos que **NÃO abra uma Issue pública**.
+Para reportar uma vulnerabilidade de segurança, utilize o recurso de Security Advisory no repositório correspondente:
 
-Em vez disso, utilize o recurso de **Security Advisory** do GitHub:
-1. Acesse o repositório específico da vulnerabilidade.
-2. Clique na aba **Security** > **Report a vulnerability**.
-3. Descreva a vulnerabilidade, passos para reprodução e potencial impacto.
+1. Acesse o repositório onde a vulnerabilidade foi encontrada.
+2. Abra a aba **Security** e clique em **Report a vulnerability**.
+3. Descreva o problema, os passos para reprodução e o impacto esperado.
 
-Nossa equipe revisará o relatório com prioridade e trabalhará em uma correção antes da divulgação pública.
+Evite abrir issues públicas para vulnerabilidades de segurança ainda não corrigidas.

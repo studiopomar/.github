@@ -1,70 +1,49 @@
-# Guia de Contribuição — Studio Pomar
+# Guia de Contribuição (Studio Pomar)
 
-Agradecemos o seu interesse em contribuir com o **Studio Pomar**! Nossos projetos são criados de forma aberta e colaborativa, visando fornecer ferramentas robustas, acessíveis e soberanas para a síntese vocal e processamento de áudio.
-
----
-
-## Formas de Contribuir
-
-Você não precisa saber programar para contribuir. Aceitamos colaborações em:
-
-1. **Desenvolvimento de Software:** Módulos em Rust, DSP, interfaces gráficas, integrações e WebAssembly.
-2. **Linguística & Fonética:** Expansão e correção de dicionários fonéticos (PT-BR e outros idiomas), regras de transição e fonemizadores.
-3. **Voicebanking & Calibração:** Gravação de bancos de voz abertos, ajuste de arquivos `oto.ini`, testes de ressíntese e consistência timbral.
-4. **Documentação & Tradução:** Elaboração de tutoriais, manuais de uso, guias de voicebank e traduções.
-5. **Relato de Problemas:** Testes em diferentes sistemas operacionais e envio de relatórios de bugs detalhados.
+Instruções para contribuir com os projetos da organização.
 
 ---
 
-## Padrões de Código (Rust)
+## Áreas de Contribuição
 
-Para manter a consistência e qualidade do ecossistema:
+1. **Desenvolvimento (Rust, C++, Python):** DSP, síntese em tempo real, UI e WebAssembly.
+2. **Fonética:** Dicionários fonéticos (PT-BR e outros idiomas) e regras de transição.
+3. **Voicebanks:** Testes de ressíntese, calibração de `oto.ini` e validação de áudio.
+4. **Documentação:** Guias de uso, documentação de APIs e manuais.
+5. **Relato de Bugs:** Issues detalhadas com passos de reprodução e logs.
 
-- **Formatação:** Todo o código Rust deve seguir o `rustfmt`.
+---
+
+## Padrões de Código
+
+Para repositórios em Rust:
+
+- **Formatação:**
   ```bash
   cargo fmt --all -- --check
   ```
-- **Linter:** O código deve passar sem warnings no `clippy`.
+- **Linter:**
   ```bash
   cargo clippy --all-targets -- -D warnings
   ```
-- **Testes:** Garanta que os testes unitários e de integração passem antes de abrir uma PR.
+- **Testes:**
   ```bash
   cargo test
   ```
-- **Processamento de Áudio & DSP:** 
-  - Evite alocações dinâmicas de memória no loop crítico de processamento de áudio em tempo real.
-  - Assegure que as funções sejam determinísticas e devidamente documentadas com suas unidades físicas (Hz, ms, semitons, dB).
 
 ---
 
-## Fluxo de Trabalho com Git
+## Fluxo de Trabalho (Git)
 
-1. **Faça um Fork** do repositório desejado.
-2. **Crie uma branch** com um nome descritivo:
-   ```bash
-   git checkout -b feature/nome-da-funcionalidade
-   # ou
-   git checkout -b fix/correcao-de-bug
-   ```
-3. **Escreva mensagens de commit claras** seguindo o padrão Conventional Commits:
-   - `feat: adiciona algoritmo de interpolação cúbica no resampler`
-   - `fix: corrige offset incorreto na leitura do oto.ini`
-   - `docs: atualiza guia de instalação no macOS`
-   - `phonetics: adiciona regra de ditongação nasal para PT-BR`
-4. **Abra um Pull Request** detalhando as alterações e referenciando as *Issues* relacionadas.
+1. Crie um fork do repositório.
+2. Crie uma branch para sua alteração (`git checkout -b feature/nome` ou `git checkout -b fix/nome`).
+3. Faça commits com mensagens diretas (ex: `feat: add cubic interpolation to resampler`, `fix: correct offset parsing in oto.ini`).
+4. Abra um Pull Request descrevendo as mudanças feitas.
 
 ---
 
 ## Dicionários e Fonemas
 
-Ao submeter correções ou adições a dicionários fonéticos:
-- Utilize a notação fonética padrão do projeto (SAMPA / X-SAMPA / ARPAbet adaptado).
-- Documente variações dialetais quando relevante.
-- Teste a saída fonética com frases reais e bancos de voz de referência.
-
----
-
-## Código de Conduta
-
-Todos os participantes devem aderir ao nosso [Código de Conduta](CODE_OF_CONDUCT.md) para garantir um ambiente acolhedor, respeitoso e livre de assédio.
+Ao sugerir alterações em dicionários fonéticos:
+- Mantenha a consistência com a notação fonética padrão do projeto.
+- Teste a saída fonética com bancos de voz de referência.

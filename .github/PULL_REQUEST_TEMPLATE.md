@@ -1,33 +1,32 @@
-## Descrição das Alterações
+## Descrição
 
-Descreva de forma clara e concisa o que este Pull Request implementa ou corrige.
+Resumo das alterações incluídas neste Pull Request.
 
 ---
 
 ## Tipo de Mudança
 
-- [ ] Correção de bug (*fix*)
-- [ ] Nova funcionalidade (*feat*)
-- [ ] Otimização de performance / DSP (*perf*)
-- [ ] Ajuste fonético / dicionário (*phonetics*)
-- [ ] Atualização de documentação (*docs*)
-- [ ] Refatoração ou manutenção interna (*refactor*)
+- [ ] Correção de bug (fix)
+- [ ] Nova funcionalidade (feat)
+- [ ] Otimização de performance / DSP (perf)
+- [ ] Ajuste de fonética ou dicionário (phonetics)
+- [ ] Atualização de documentação (docs)
+- [ ] Refatoração interna (refactor)
 
 ---
 
-## Repositórios / Módulos Afetados
+## Módulos Afetados
 
 - [ ] `kamafeu`
 - [ ] `Copaiba-NEO`
 - [ ] `Copaiba-Lexicon-LTS`
 - [ ] Motores de Fonetização / Samplers
-- [ ] Outro: _________
+- [ ] Outro
 
 ---
 
 ## Checklist
 
-- [ ] O código segue os padrões do projeto (`cargo fmt` / `cargo clippy`).
-- [ ] Testes automatizados foram executados e passaram com sucesso (`cargo test`).
-- [ ] A documentação foi atualizada (quando aplicável).
-- [ ] Mudanças em algoritmos de áudio/DSP foram testadas com arquivos de áudio de referência.
+- [ ] Formatação e linter validados (`cargo fmt` / `cargo clippy`).
+- [ ] Testes executados com sucesso (`cargo test`).
+- [ ] Documentação atualizada (se aplicável).
