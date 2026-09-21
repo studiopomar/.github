@@ -11,9 +11,9 @@
 
 <br/>
 
-[![Organização](https://img.shields.io/badge/Studio-Pomar-c0392b?style=for-the-badge&labelColor=1e1e1e)](https://github.com/studiopomar)
+[![Website](https://img.shields.io/badge/Website-studiopomar.github.io-27ae60?style=for-the-badge&labelColor=1e1e1e)](https://studiopomar.github.io/)
 [![Rust](https://img.shields.io/badge/Rust-DSP-d35400?style=for-the-badge&logo=rust&logoColor=white&labelColor=1e1e1e)](https://www.rust-lang.org/)
-[![Ecossistema](https://img.shields.io/badge/Ecossistema-UTAU_%7C_OpenUtau_%7C_DiffSinger-27ae60?style=for-the-badge&labelColor=1e1e1e)](https://github.com/studiopomar)
+[![Ecossistema](https://img.shields.io/badge/Ecossistema-UTAU_%7C_OpenUtau_%7C_DiffSinger-f39c12?style=for-the-badge&labelColor=1e1e1e)](https://github.com/studiopomar)
 [![Licença](https://img.shields.io/badge/Licen%C3%A7a-GPL_%2F_MIT-2c3e50?style=for-the-badge&labelColor=1e1e1e)](https://github.com/studiopomar)
 
 <br/>
@@ -25,6 +25,8 @@
 ## Sobre
 
 O **Studio Pomar** desenvolve ferramentas de código aberto para síntese vocal, processamento digital de sinais (DSP) e produção musical. O projeto busca criar softwares rápidos, estáveis e executados localmente, integrando o ecossistema de UTAU e OpenUtau com tecnologias modernas em Rust.
+
+Acesse o portal oficial em: **[studiopomar.github.io](https://studiopomar.github.io/)**
 
 ---
 
