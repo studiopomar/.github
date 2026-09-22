@@ -54,7 +54,7 @@ Acesse o portal oficial em: **[studiopomar.github.io](https://studiopomar.github
      Core & DSP           Aplicações            Voicebanks
    ──────────────       ──────────────        ──────────────
    • TD-PSOLA Engine    • kamafeu (Editor)    • Dicionários PT-BR
-   • Phonemizers        • Copaiba-NEO         • Mapeamentos OTO
+   • Phonemizers        • Copaiba-NEO         • Mapeamentos oto.ini
    • Rust Audio Crate   • Lexicon Tools       • Testes de Síntese
 ```
 
