@@ -24,21 +24,25 @@
 
 ## Sobre
 
-O **Studio Pomar** desenvolve ferramentas de código aberto para síntese vocal, processamento digital de sinais (DSP) e produção musical. O projeto busca criar softwares rápidos, estáveis e executados localmente, integrando o ecossistema de UTAU e OpenUtau com tecnologias modernas em Rust.
+O **Studio Pomar** desenvolve ferramentas de código aberto para síntese vocal, processamento digital de sinais (DSP) e produção musical. O projeto busca criar softwares rápidos, estáveis e executados localmente, integrando o ecossistema de UTAU e OpenUtau com tecnologias modernas em Rust, C++, C e WebAssembly.
 
 Acesse o portal oficial em: **[studiopomar.github.io](https://studiopomar.github.io/)**
 
 ---
 
-## Projetos
+## Projetos em Destaque
 
 <div align="center">
 
-| Repositório | Descrição | Tecnologias |
+| Repositório | Descrição | Stack |
 | :--- | :--- | :---: |
-| **[kamafeu](https://github.com/studiopomar/kamafeu)** | Editor e sintetizador vocal com piano roll multifaixa, motor DSP nativo (TD-PSOLA) e edição de pitch. | `Rust` `DSP` |
-| **[Copaiba-NEO](https://github.com/studiopomar/Copaiba-NEO)** | Editor multiplataforma de `oto.ini` para configuração e calibração de voicebanks. | `Rust` `GUI` |
-| **[Copaiba-Lexicon-LTS](https://github.com/studiopomar/Copaiba-Lexicon-LTS)** | Visualizador de waveform e ferramentas de configuração para voicebanks UTAU/OpenUtau. | `Python` |
+| **[kamafeu](https://github.com/studiopomar/kamafeu)** | Editor e sintetizador vocal com piano roll multifaixa, motor DSP nativo (TD-PSOLA) e edição de pitch. | `Rust` `DSP` `egui` |
+| **[Copaiba-NEO](https://github.com/studiopomar/Copaiba-NEO)** | Editor multiplataforma de `oto.ini` para calibração de voicebanks e análise FFT em tempo real. | `Rust` `Wasm` `WebAudio` |
+| **[Copaiba-Lexicon-LTS](https://github.com/studiopomar/Copaiba-Lexicon-LTS)** | Visualizador de waveform e ferramentas de alto nível para voicebanks UTAU/OpenUtau. | `Python` `Waveform` |
+| **[macres-rt](https://github.com/studiopomar/macres-rt)** | Port cross-platform de alta performance do resampler UTSU (Desktop & Mobile). | `C++` `C` `DSP` |
+| **[w4u-rt](https://github.com/studiopomar/w4u-rt)** | Port nativo multiplataforma do vocoder WORLD (world4utau). | `C++` `C` `Vocoder` |
+| **[straycat-rt](https://github.com/studiopomar/straycat-rt)** | Port moderno em Rust do resampler straycat baseado em WORLD. | `Rust` `DSP` |
+| **[studiopomar.github.io](https://github.com/studiopomar/studiopomar.github.io)** | Portal oficial, landing page e documentações do Studio Pomar. | `TypeScript` `Web` |
 
 </div>
 
@@ -54,7 +58,7 @@ Acesse o portal oficial em: **[studiopomar.github.io](https://studiopomar.github
      Core & DSP           Aplicações            Voicebanks
    ──────────────       ──────────────        ──────────────
    • TD-PSOLA Engine    • kamafeu (Editor)    • Dicionários PT-BR
-   • Phonemizers        • Copaiba-NEO         • Mapeamentos oto.ini
+   • Resamplers (-rt)   • Copaiba-NEO         • Mapeamentos oto.ini
    • Rust Audio Crate   • Lexicon Tools       • Testes de Síntese
 ```
 
@@ -62,19 +66,21 @@ Acesse o portal oficial em: **[studiopomar.github.io](https://studiopomar.github
 
 ## Diretrizes
 
-- **Execução Local:** Softwares desenhados para rodar na máquina do usuário sem dependência de serviços fechados em nuvem.
-- **Performance em Rust:** Módulos de áudio compilados nativamente, com gerenciamento seguro de memória e baixa latência.
-- **Suporte Fonético:** Criação e manutenção de dicionários fonéticos e regras de transição para português brasileiro.
+- **Execução Local & Determinística:** Softwares desenhados para rodar diretamente na máquina do usuário sem dependência de serviços externos.
+- **Performance Nativa em Rust & C/C++:** Módulos de áudio compilados nativamente, com gerenciamento eficiente de memória e ultra-baixa latência.
+- **Inovação Fonética:** Criação e manutenção de metodologias fonéticas, dicionários G2P e regras de transição.
 
 ---
 
-## Tecnologias
+## Tecnologias & Ecossistema
 
 <div align="center">
 
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=flat-square&logo=webassembly&logoColor=white)
 ![OpenUtau](https://img.shields.io/badge/OpenUtau-Compat%C3%ADvel-27ae60?style=flat-square)
 ![DiffSinger](https://img.shields.io/badge/DiffSinger-Suporte-f39c12?style=flat-square)
@@ -87,9 +93,9 @@ Acesse o portal oficial em: **[studiopomar.github.io](https://studiopomar.github
 
 Contribuições são bem-vindas em código, testes, fonética e documentação:
 
-- **Código:** Desenvolvimento de DSP, correções e novas ferramentas em Rust.
-- **Fonética:** Ajustes em dicionários fonéticos e regras de transição.
-- **Voicebanks:** Testes de compatibilidade com diferentes configurações de voicebank.
+- **Código:** Desenvolvimento de DSP, correções de áudio e ferramentas em Rust/C++.
+- **Fonética:** Ajustes em dicionários fonéticos, reclists e regras de transição.
+- **Voicebanks:** Testes de compatibilidade com diferentes configurações de voicebanks.
 
 Veja o guia detalhado em [CONTRIBUTING.md](CONTRIBUTING.md).
 
